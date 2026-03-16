@@ -13,7 +13,7 @@ export async function fetchAdvice() {
             throw new Error('Response error')
         }        
         const data = await response.json();
-        return data
+        return data.slip;
     } catch(error){
         console.error('Error Message:', error);
         return null;
